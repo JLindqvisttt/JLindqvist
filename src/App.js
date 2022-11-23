@@ -11,7 +11,7 @@ function App() {
         <Router>
             <Navbar/>
             <Routes>
-                <Route exact path="/" component={HomePage}/>
+                <Route exact path="/" component="HomePage"/>
             </Routes>
         </Router>
     );
