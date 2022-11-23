@@ -11,19 +11,21 @@ import {
 const Navbar = () => {
   return (
     <>
-      <Nav>
+      <Nav className="bg-dark">
         <NavLink to='/'>
           <img src={require('../images/transparant.png')} alt='logo' width="70vh"/>
         </NavLink>
         <Bars />
         <NavMenu>
-          <NavLink to='/About' activeStyle>
+          <NavLink to='/about' activeStyle>
             About me
           </NavLink>
-          <NavLink to='/Resume' activeStyle>
+          <NavLink to='/services' activeStyle>
             Resume
           </NavLink>
         </NavMenu>
+        <NavBtn>
+        </NavBtn>
       </Nav>
     </>
   );

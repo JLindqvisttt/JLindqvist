@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins_wght@200;400;700&display=swap');
+
+body{
+  background: #131316;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bg-section{
+  background: #131316;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+section{
+  display: grid;
+  place-items: center;
+  align-content: center;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.hidden{
+  opacity: 0;
+  filter: blur(5px);
+  tranform: translateX(-100%);
+  transition: all 2s ;
 }
 
-.App-link {
-  color: #61dafb;
+.show{
+  opacity: 1;
+  filter: blur(0);
+  tranform: translateX(0);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bg-image {
+  width: 100vh;
+  height:100vh;
+  background: linear-gradient(-45deg, #52c4ee, #1f8696, #242424, #131316);
+  background-size: 500% 500%;
+  animation: gradient 15s ease infinite;
+
 }
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}.login-title-2 {
+   font-weight: 800;
+   font-size: medium;
+   margin-top: 5px;
+ }
+.login-title {
+  font-weight: 800;
+  font-size: xxx-large;
+}
+.login-heading {
+  font-weight: 500;
+  font-size: xx-large;
+}
+
