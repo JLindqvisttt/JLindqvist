@@ -5,7 +5,7 @@ import "../App.css"
 
 function CollapsibleExample() {
     return (
-        <Navbar collapseOnSelect expand="lg" style={{background: '#242424'}} variant="dark">
+        <Navbar collapseOnSelect expand="lg" style={{background: '#131316'}} variant="dark">
 
             <Container>
                 <Navbar.Brand href="/"> <img src={require('../images/transparant.png')} alt='logo' width="50vh"/></Navbar.Brand>

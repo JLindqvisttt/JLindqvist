@@ -19,10 +19,22 @@ section{
 
 .animatedText{
     animation: gradient 5s ease-in-out infinite;
-    background: linear-gradient(to right, #ee9ca7, #ffdde1, #2193b0, #6dd5ed);
+    background: linear-gradient(to right, #ee9ca7, #d35dd0, #41ce66, #245e33);
     background-size: 300%;
     background-clip: text;
     text-align: center;
     -webkit-text-fill-color: transparent;
 
+}
+.animatedLine{
+    text-align: center;
+    animation: gradient 5s ease-in-out infinite;
+    background: linear-gradient(to right, #ee9ca7, #d35dd0, #41ce66, #245e33);
+    background-size: 300%;
+    background-clip: text;
+    text-align: center;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 10px;
+    margin-top: 7.5vh;
+    border-bottom: 3px solid #242424;
 }
