@@ -1,34 +1,27 @@
-import React from 'react';
-import {
-  Nav,
-  NavLink,
-  Bars,
-  NavMenu,
-  NavBtn,
-  NavBtnLink
-} from './NavbarElements';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import "../App.css"
 
-const Navbar = () => {
-  return (
-    <>
-      <Nav className="bg-dark">
-        <NavLink to='/'>
-          <img src={require('../images/transparant.png')} alt='logo' width="70vh"/>
-        </NavLink>
-        <Bars />
-        <NavMenu>
-          <NavLink to='/about' activeStyle>
-            About me
-          </NavLink>
-          <NavLink to='/services' activeStyle>
-            Resume
-          </NavLink>
-        </NavMenu>
-        <NavBtn>
-        </NavBtn>
-      </Nav>
-    </>
-  );
-};
+function CollapsibleExample() {
+    return (
+        <Navbar collapseOnSelect expand="lg" style={{background: '#242424'}} variant="dark">
 
-export default Navbar;
+            <Container>
+                <Navbar.Brand href="/"> <img src={require('../images/transparant.png')} alt='logo' width="50vh"/></Navbar.Brand>
+                <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
+                <Navbar.Collapse id="responsive-navbar-nav">
+                    <Nav className="me-auto" defaultActiveKey="/home" as="ul">
+                        <Nav.Link className="nav-links" href="#aboutme">About me</Nav.Link>
+                        <Nav.Link className="nav-links" href="/Resume">Cv</Nav.Link>
+                    </Nav>
+                    <Nav defaultActiveKey="/home" as="ul">
+                        <Nav.Link className="nav-links" href="#contactme"> Contact me </Nav.Link>
+                    </Nav>
+                </Navbar.Collapse>
+            </Container>
+        </Navbar>
+    );
+}
+
+export default CollapsibleExample;
