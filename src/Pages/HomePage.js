@@ -13,7 +13,7 @@ const HomePage = () => {
                     <div className="container ">
                         <div className="row justify-content-md-center">
                             <div className="col">
-                                <h1 className="text-center" style={{textAlign:'left'}}>Hello there<h1 style={{textAlign:'left'}}>dd</h1>, my name is </h1>
+                                <h1 className="text-center" style={{textAlign:'left'}}>Hello there, my name is </h1>
                                 <h1 className="animatedText">Jonathan Lindqvist</h1>
                             </div>
 
