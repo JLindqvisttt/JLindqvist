@@ -30,7 +30,7 @@ const HomePage = () => {
                                     />
                                 </h4>
                             </div>
-                            <div className="col-sm-1" style={{textAlign:"center"}}>
+                            <div className="col-sm-1" style={{textAlign: "center"}}>
                                 <img src={require('../images/programmer-icon.webp')} alt='logo' width="180vh"/>
                             </div>
                         </div>
@@ -39,21 +39,22 @@ const HomePage = () => {
 
                 </div>
             </section>
-            <section className="show bg-section text-dark"  id={"aboutme"}>
-                <h2 style={{borderBottom:'2px solid #1f8696'}} className="text-white-50">About me</h2>
+            <section className="show bg-section text-dark" id={"aboutme"}>
+                <h2 style={{borderBottom: '2px solid #1f8696'}} className="text-white-50">About me</h2>
                 <div className="container-fluid">
-                    <div className="row justify-content-md-center" style={{paddingTop:'5vh'}}>
-                        <div className="col-lg-2" style={{textAlign:'center'}}>
-                            <img src={require('../images/me.PNG')} alt='logo' width="150px" style={{borderRadius: 100}}/>
+                    <div className="row justify-content-md-center" style={{paddingTop: '5vh'}}>
+                        <div className="col-lg-2" style={{textAlign: 'center'}}>
+                            <img src={require('../images/me.PNG')} alt='logo' width="150px"
+                                 style={{borderRadius: 100}}/>
                         </div>
                         <div className="col-lg-3">
-                            <h6 className="text-light">I am a young man who is 23 years old and was born and raised in
-                                Stockholm, Tyresö. </h6>
-
+                            <p className="text-light">I am a young man who is 23 years old and was born and raised in
+                                Stockholm, Tyresö. Have worked a lot with the three architectures, frontend, backend and
+                                database. </p>
+                            <meter>ded</meter>
                         </div>
                     </div>
                 </div>
-
 
 
             </section>
