@@ -44,7 +44,7 @@ const HomePage = () => {
                                     <h1 className="animatedLine ">Jonathan Lindqvist.</h1>
                                 </div>
 
-                                <h4 className="reveal">I'm a {' '}
+                                <h4 className="reveal text-white-50">I'm a {' '}
                                     <Typical
                                         className="animatedText"
                                         loop={Infinity}
