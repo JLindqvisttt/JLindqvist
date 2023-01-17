@@ -3,6 +3,9 @@ import "./style.css"
 import {MDBIcon} from 'mdbreact';
 import "@fortawesome/fontawesome-free/css/all.min.css"
 import Typical from 'react-typical'
+import Navbar from "react-bootstrap/Navbar";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
 
 function reveal() {
     var reveals = document.querySelectorAll(".reveal");
@@ -25,6 +28,23 @@ window.addEventListener("scroll", reveal);
 const HomePage = () => {
     return (
         <div>
+            <Navbar collapseOnSelect expand="lg" style={{background: '#131316'}} variant="dark">
+                <Container>
+                    <Navbar.Brand href="/"> <img src={require('../images/transparant.png')} alt='logo' width="50vh"/></Navbar.Brand>
+                    <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
+                    <Navbar.Collapse id="responsive-navbar-nav">
+                        <Nav className="me-auto" defaultActiveKey="/home" as="ul">
+                            <Nav.Link className="nav-links" href="#aboutme">About me</Nav.Link>
+                            <Nav.Link className="nav-links" href="#aboutme">Projects</Nav.Link>
+
+                        </Nav>
+                        <Nav defaultActiveKey="/home" as="ul">
+                            <Nav.Link className="nav-links" href="/Cv">Cv</Nav.Link>
+                            <Nav.Link className="nav-links" href="/Contact"> Contact me </Nav.Link>
+                        </Nav>
+                    </Navbar.Collapse>
+                </Container>
+            </Navbar>
             <section>
                 <div className="bg-image">
                     <div className="container">

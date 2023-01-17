@@ -33,7 +33,17 @@ body{
   background: linear-gradient(-45deg, #52c4ee, #1f8696, #dc83d9, #131316);
   background-size: 500% 500%;
   animation: gradient 15s ease infinite;
+}
 
+.bg-imageContact {
+  padding-top: 0;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  width: 100%;
+  background: linear-gradient(-45deg, #da1265, #de17d8, #bc40e5, #131316);
+  background-size: 500% 500%;
+  animation: gradient 15s ease infinite;
 }
 @keyframes gradient {
   0% {
@@ -60,4 +70,6 @@ body{
   font-weight: 500;
   font-size: xx-large;
 }
-
+.ContactText{
+  opacity: 1;
+}

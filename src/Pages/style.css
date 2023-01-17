@@ -61,3 +61,29 @@ section{
 .slideIn {
     animation: 1s ease-out 0s 1 slideInLeft;
 }
+.CVpage{
+    margin-top: -40vh;
+    background: white;
+    opacity: initial;
+    width: 70%;
+    height: auto;
+    padding: 5vh;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    transition: box-shadow .3s;
+}
+.CVpage:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+.box {
+    margin-top: -20vh;
+    opacity: 0.85;
+    padding: 5vh;
+    transition: box-shadow .3s;
+    width: 70%;
+    border-radius:10px;
+    border: 1px solid #000000;
+}
+.box:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
