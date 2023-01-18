@@ -8,6 +8,8 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import ContactForm from "./ContactForm";
 import Footer from "./Footer";
+import {Col} from "react-bootstrap";
+import {FaEnvelope, FaGithub, FaLinkedin} from "react-icons/fa";
 
 
 const Contact = () => {
@@ -35,16 +37,31 @@ const Contact = () => {
                         <div className="row justify-content-md-center">
                             <section style={{height: '100vh'}}>
                                 <div className="box bg-section text-light">
-                                    <h2>Contact me</h2>
                                     <div className="row justify-content-md-center">
                                         <div className="col-6">
+                                            <h2>Contact me</h2>
                                             <ContactForm/>
                                         </div>
-                                        <div className="col-6">
-                                            <p className="text-primary">Here can you find more interest links</p>
-                                            <p>Email</p>
-                                            <p>Vart jag bor</p>
-                                            <p>GithubLänk</p>
+                                        <div className="col-6 col-md-4" style={{marginTop:'0.8vh'}}>
+                                        <h4>  More links ;) </h4>
+                                            <div style={{marginTop:'4vh'}}>
+                                                <a href="mailto:example@email.com" className="text-light text-decoration-none">
+                                                    <FaEnvelope className="text-primary" style={{marginRight:'1vh', fontSize:'25px'}}/>
+                                                    linkanjontes@gmail.com
+                                                </a>
+                                            </div>
+                                            <div style={{marginTop:'4vh'}}>
+                                                <a href="https://github.com/" className="text-light text-decoration-none">
+                                                    <FaGithub className="text-primary" style={{marginRight:'1vh', fontSize:'25px'}}/>
+                                                    GitHub
+                                                </a>
+                                            </div>
+                                            <div style={{marginTop:'4vh'}}>
+                                                <a href="https://github.com/" className="text-light text-decoration-none">
+                                                    <FaLinkedin className="text-primary" style={{marginRight:'1vh', fontSize:'25px'}}/>
+                                                    LinkedIn
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
 

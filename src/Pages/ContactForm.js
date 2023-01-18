@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import {Button, Col, Form} from "react-bootstrap";
 
 const FORM_ENDPOINT = ""; // TODO - fill on the later step
 
@@ -26,40 +27,25 @@ const ContactForm = () => {
             method="POST"
             target="_blank"
         >
-            <div className="mb-3 pt-0">
-                <input
-                    type="text"
-                    placeholder="Your name"
-                    name="name"
-                    className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
-                    required
-                />
-            </div>
-            <div className="mb-3 pt-0">
-                <input
-                    type="email"
-                    placeholder="Email"
-                    name="email"
-                    className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
-                    required
-                />
-            </div>
-            <div className="mb-3 pt-0">
-        <textarea
-            placeholder="Your message"
-            name="message"
-            className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
-            required
-        />
-            </div>
-            <div className="mb-3 pt-0">
-                <button
-                    className="btn btn-primary btn-lg"
-                    type="submit"
-                >
-                    Send a message
-                </button>
-            </div>
+            <Col md={10}>
+                <Form.Group controlId="formName">
+                    <Form.Label>Name</Form.Label>
+                    <Form.Control type="text" placeholder="Enter your name"/>
+                </Form.Group>
+                <Form.Group controlId="formEmail">
+                    <Form.Label>Email</Form.Label>
+                    <Form.Control type="email" placeholder="Enter your email"/>
+                </Form.Group>
+                <Form.Group controlId="formMessage">
+                    <Form.Label>Message</Form.Label>
+                    <Form.Control as="textarea" rows="3" placeholder="Enter your message"/>
+                </Form.Group>
+                <Button variant="primary" type="submit">
+                    Submit
+                </Button>
+
+
+            </Col>
         </form>
     );
 };
