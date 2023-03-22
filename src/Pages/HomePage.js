@@ -72,11 +72,11 @@ const HomePage = () => {
                                         steps={[
                                             '23 years old ',
                                             'Developer ',
-                                            2000,
+                                            5000,
                                             'Student ',
-                                            2000,
-                                            'Frontend lover ',
-                                            2000
+                                            5000,
+                                            'Software engineer  ',
+                                            5000
                                         ]}
                                     />
                                 </h4>

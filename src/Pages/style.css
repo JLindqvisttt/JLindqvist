@@ -62,10 +62,9 @@ section{
     animation: 1s ease-out 0s 1 slideInLeft;
 }
 .CVpage{
-    margin-top: -40vh;
     background: white;
     opacity: initial;
-    width: 70%;
+    margin-top: 20vh;
     height: auto;
     padding: 5vh;
     border-radius: 10px;
