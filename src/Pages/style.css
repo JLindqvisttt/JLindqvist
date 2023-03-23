@@ -64,8 +64,8 @@ section{
 .CVpage{
     background: white;
     opacity: initial;
-    margin-top: 20vh;
-    height: auto;
+    margin-top: 10vh;
+
     padding: 5vh;
     border-radius: 10px;
     border: 1px solid #ccc;

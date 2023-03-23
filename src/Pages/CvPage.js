@@ -8,7 +8,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Test from "./Test";
 import {Col, Row} from "react-bootstrap";
-
+import ProgressBar from 'react-bootstrap/ProgressBar'
 
 const CvPage = () => {
     return (
@@ -29,8 +29,6 @@ const CvPage = () => {
             </Navbar>
             <section className="bg-imageContact">
                 <div className="container">
-
-                    <section style={{height: '100vh'}}>
                         <div className="CVpage">
                             <h2 className="text-center text-primary">Curriculum Vitae</h2>
                             <div className="row justify-content-md-center mt-lg-5">
@@ -174,33 +172,57 @@ const CvPage = () => {
                                 </Col>
                             </Row>
                             <Row className="mb-4">
-                                <Col md={10}>
-                                    <h3>Skills</h3>
-                                    <p>
-                                        <strong>
-                                            Coop, grocery store in Tyresö
-                                        </strong>
-                                    </p>
-                                    <p>I am currently working as an evening manager while pursuing my studies. I have
-                                        been in this
-                                        role for 4.5 years, during which I have had full responsibility for overseeing
-                                        the entire store.
-                                        My responsibilities include managing the post office, cash register and handling
-                                        package
-                                        management from Postnord, as well as selling games for Svenska Spel and ATG.
-                                        Furthermore, this role includes a lot of customer contact which has strengthened
-                                        my ability
-                                        to handle different types of customers and situations.
-                                    </p>
+                            <h3>Skills</h3>
+                                <Col md={6}>
+                                    <p>Java</p>
+                                <ProgressBar now={85} />
                                 </Col>
-                                <Col md={2} style={{marginTop: "4vh"}}>
-                                    <p>May 2018 - Ongoing</p>
+                                <Col md={6}>
+                                <p>JavaScript</p>
+                                <ProgressBar now={60} />
+                                </Col>
+                            </Row>
+                            <Row className="mb-4">
+                                <Col md={6}>
+                                    <p>C</p>
+                                <ProgressBar now={40} />
+                                </Col>
+                                <Col md={6}>
+                                <p>React.js</p>
+                                <ProgressBar now={60} />
+                                </Col>
+                            </Row>
+                            <Row className="mb-4">
+                                <Col md={6}>
+                                    <p>Node.js</p>
+                                <ProgressBar now={85} />
+                                </Col>
+                                <Col md={6}>
+                                <p>Spring framework</p>
+                                <ProgressBar now={60} />
+                                </Col>
+                            </Row>
+                            <Row className="mb-4">
+                                <Col md={6}>
+                                    <p>MySQL</p>
+                                <ProgressBar now={85} />
+                                </Col>
+                                <Col md={6}>
+                                <p>NoSQL (MongoDB)</p>
+                                <ProgressBar now={60} />
+                                </Col>
+                            </Row>
+                            <Row className="mb-4">
+                                <Col md={6}>
+                                    <p>MySQL</p>
+                                <ProgressBar now={85} />
+                                </Col>
+                                <Col md={6}>
+                                <p>NoSQL (MongoDB)</p>
+                                <ProgressBar now={60} />
                                 </Col>
                             </Row>
                         </div>
-                    </section>
-
-
                 </div>
 
             </section>
