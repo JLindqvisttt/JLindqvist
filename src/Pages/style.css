@@ -65,7 +65,7 @@ section{
     background: white;
     opacity: initial;
     margin-top: 10vh;
-
+    margin-bottom: 10vh;
     padding: 5vh;
     border-radius: 10px;
     border: 1px solid #ccc;
@@ -85,4 +85,7 @@ section{
 }
 .box:hover {
     box-shadow: 0 0 11px rgba(33,33,33,1);
+}
+.textCV{
+color: #379b9f;
 }

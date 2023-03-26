@@ -30,27 +30,27 @@ const CvPage = () => {
             <section className="bg-imageContact">
                 <div className="container">
                         <div className="CVpage">
-                            <h2 className="text-center text-primary">Curriculum Vitae</h2>
+                            <h2 className="text-center textCV">Curriculum Vitae</h2>
                             <div className="row justify-content-md-center mt-lg-5">
-                                <div className="col-md-2">
-                                    <img src={require('../images/CV_IMAGE.PNG')} alt='logo' width={100}/>
+                                <div className="col-2">
+                                    <img src={require('../images/CV_IMAGE.PNG')} alt='logo' width={120}/>
                                 </div>
-                                <div className="col-md mt-3">
+                                <div className="col-8 mt-5">
                                     <p>"Goal-oriented and driven software engineer with a passion for
                                         achieving results. Dedicated to exceeding expectations and constantly
                                         striving to improve myself and my work "</p>
                                 </div>
 
-                                <div className="col-md-3">
-                                    <h6 className="text-lg-start text-primary">Jonathan Lindqvist</h6>
+                                <div className="col-md-2">
+                                    <h6 className="text-lg-start textCV">Jonathan Lindqvist</h6>
                                     <h6 className="text-lg-start">1999-02-05</h6>
                                     <h6 className="text-lg-start">Musserongången 285</h6>
                                     <h6 className="text-lg-start">Email: linkanjontes@gmail.com</h6>
                                 </div>
                             </div>
-                            <Row className="mb-4">
+                            <Row className="mb-4 mt-4" style={{borderTop: "2px solid #379b9f", paddingTop:'10px '}}>
                                 <Col md={10}>
-                                    <h3>Education</h3>
+                                    <h3 className='textCV'>Education</h3>
                                     <p>
                                         <strong>
                                             Computer technology, university engineer at KTH Royal Institute of
@@ -111,9 +111,9 @@ const CvPage = () => {
                                     <p>Aug 2015 - June 2018</p>
                                 </Col>
                             </Row>
-                            <Row className="mb-4">
+                            <Row className="mb-4" style={{borderTop: "2px solid #379b9f", paddingTop:'10px '}}>
                                 <Col md={10}>
-                                    <h3>Employment</h3>
+                                    <h3 className='textCV'>Employment</h3>
                                     <p>
                                         <strong>
                                             Coop, grocery store in Tyresö
@@ -171,8 +171,8 @@ const CvPage = () => {
                                     </p>
                                 </Col>
                             </Row>
-                            <Row className="mb-4">
-                            <h3>Skills</h3>
+                            <Row className="mb-4" style={{borderTop: "2px solid #379b9f", paddingTop:'10px '}}>
+                            <h3 className='textCV'>Skills</h3>
                                 <Col md={6}>
                                     <p>Java</p>
                                 <ProgressBar now={85} />
@@ -189,7 +189,7 @@ const CvPage = () => {
                                 </Col>
                                 <Col md={6}>
                                 <p>React.js</p>
-                                <ProgressBar now={60} />
+                                <ProgressBar now={85} />
                                 </Col>
                             </Row>
                             <Row className="mb-4">
@@ -199,28 +199,81 @@ const CvPage = () => {
                                 </Col>
                                 <Col md={6}>
                                 <p>Spring framework</p>
-                                <ProgressBar now={60} />
+                                <ProgressBar now={90} />
                                 </Col>
                             </Row>
                             <Row className="mb-4">
                                 <Col md={6}>
                                     <p>MySQL</p>
-                                <ProgressBar now={85} />
+                                <ProgressBar now={95} />
                                 </Col>
                                 <Col md={6}>
                                 <p>NoSQL (MongoDB)</p>
-                                <ProgressBar now={60} />
+                                <ProgressBar now={35} />
                                 </Col>
                             </Row>
                             <Row className="mb-4">
                                 <Col md={6}>
-                                    <p>MySQL</p>
-                                <ProgressBar now={85} />
+                                    <p>Graph database (Neo4j)</p>
+                                <ProgressBar now={45} />
                                 </Col>
                                 <Col md={6}>
-                                <p>NoSQL (MongoDB)</p>
-                                <ProgressBar now={60} />
+                                <p>HTML</p>
+                                <ProgressBar now={98} />
                                 </Col>
+                            </Row>
+                            <Row className="mb-4">
+                                <Col md={6}>
+                                    <p>Vertx</p>
+                                <ProgressBar now={20} />
+                                </Col>
+                                <Col md={6}>
+                                <p>Android studio</p>
+                                <ProgressBar now={65} />
+                                </Col>
+                            </Row>
+                            <Row className="mb-4">
+                                <Col md={6}>
+                                    <p>Python</p>
+                                <ProgressBar now={15} />
+                                </Col>
+                            </Row>
+                            <Row className="mb-4" style={{borderTop: "2px solid #379b9f", paddingTop:'10px '}}>
+                            <h3 className='textCV'>Other</h3>
+                            <Col md={10}>
+                                    <p>
+                                        <strong>
+                                            Language
+                                        </strong>
+                                    </p>
+                                </Col>
+                                <Col md={2}>
+                                    <p>
+                                        English, Swedish
+                                    </p>
+                                </Col>
+                            </Row>
+                            <Row className="mb-4">
+                            <Col md={10}>
+                                    <p>
+                                        <strong>
+                                            Driving Licence
+                                        </strong>
+                                    </p>
+                                </Col>
+                                <Col md={2}>
+                                    <p>
+                                        B + Car
+                                    </p>
+                                </Col>
+                            </Row>
+                            <Row className="mb-4">
+                            <Col md={10}>
+                                    <p>
+                                    References are provide on request
+                                    </p>
+                                </Col>
+                        
                             </Row>
                         </div>
                 </div>
