@@ -33,7 +33,7 @@ const CvPage = () => {
                             <h2 className="text-center textCV">Curriculum Vitae</h2>
                             <div className="row justify-content-md-center mt-lg-5">
                                 <div className="col-2">
-                                    <img src={require('../images/CV_IMAGE.PNG')} alt='logo' width={120}/>
+                                    <img src={require('../images/CV_IMAGE.PNG')} alt='logo' width={150}/>
                                 </div>
                                 <div className="col-8 mt-5">
                                     <p>"Goal-oriented and driven software engineer with a passion for
@@ -267,7 +267,8 @@ const CvPage = () => {
                                     </p>
                                 </Col>
                             </Row>
-                            <Row className="mb-4">
+                            <Row className="mb-4" style={{borderTop: "2px solid #379b9f", paddingTop:'10px '}}>
+                            <h3 className='textCV'>References</h3>
                             <Col md={10}>
                                     <p>
                                     References are provide on request
