@@ -46,19 +46,19 @@ const Contact = () => {
                                         <h4>  More links ;) </h4>
                                             <div style={{marginTop:'4vh'}}>
                                                 <a href="mailto:example@email.com" className="text-light text-decoration-none">
-                                                    <FaEnvelope className="text-primary" style={{marginRight:'1vh', fontSize:'25px'}}/>
+                                                    <FaEnvelope className="textCV" style={{marginRight:'1vh', fontSize:'25px'}}/>
                                                     linkanjontes@gmail.com
                                                 </a>
                                             </div>
                                             <div style={{marginTop:'4vh'}}>
                                                 <a href="https://github.com/" className="text-light text-decoration-none">
-                                                    <FaGithub className="text-primary" style={{marginRight:'1vh', fontSize:'25px'}}/>
+                                                    <FaGithub className="textCV" style={{marginRight:'1vh', fontSize:'25px'}}/>
                                                     GitHub
                                                 </a>
                                             </div>
                                             <div style={{marginTop:'4vh'}}>
                                                 <a href="https://github.com/" className="text-light text-decoration-none">
-                                                    <FaLinkedin className="text-primary" style={{marginRight:'1vh', fontSize:'25px'}}/>
+                                                    <FaLinkedin className="textCV" style={{marginRight:'1vh', fontSize:'25px'}}/>
                                                     LinkedIn
                                                 </a>
                                             </div>
