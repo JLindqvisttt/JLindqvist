@@ -7,6 +7,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import {FaGithub} from "react-icons/fa";
+import SliderZyn from "./SliderZyn";
 
 function reveal() {
     var reveals = document.querySelectorAll(".reveal");
@@ -112,7 +113,8 @@ const HomePage = () => {
                                 In addition to my technical skills, I am a strong communicator and collaborator, able to
                                 work effectively both independently and as part of a team. I am committed to delivering
                                 high-quality software that meets the needs of end-users and helps businesses achieve
-                                their goals. I am excited to continue growing my skills and contributing to the dynamic and constantly evolving field of software development."
+                                their goals. I am excited to continue growing my skills and contributing to the dynamic
+                                and constantly evolving field of software development."
                             </p>
                         </div>
                     </div>
@@ -189,10 +191,18 @@ const HomePage = () => {
                         ></iframe>
                     </div>
                 </div>
-                <div>
-                    <a href="https://github.com/" className="text-light text-decoration-none">
+                <div className="ms-5 mt-3">
+                    <a href="https://github.com/JLindqvisttt/DataLake_Backend"
+                       className="text-light text-decoration-none">
                         <FaGithub className="textCV" style={{marginRight: '1vh', fontSize: '25px'}}/>
-                        Datalake Repository
+                        Datalake Repository - Backend
+                    </a>
+                </div>
+                <div className="ms-5 mt-3">
+                    <a href="https://github.com/JLindqvisttt/DataLake_Frontend"
+                       className="text-light text-decoration-none">
+                        <FaGithub className="textCV" style={{marginRight: '1vh', fontSize: '25px'}}/>
+                        Datalake Repository - Frontend
                     </a>
                 </div>
             </section>
@@ -223,7 +233,7 @@ const HomePage = () => {
                     </div>
                 </div>
                 <div>
-                    <a href="https://github.com/JLindqvisttt/PaintMaster/tree/main/HI1038-Paint-Master-main"
+                    <a href="https://github.com/JLindqvisttt/CocktailApp"
                        className="text-dark text-decoration-none">
                         <FaGithub className="textCV" style={{marginRight: '1vh', fontSize: '25px'}}/>
                         Cocktail Repository
@@ -261,7 +271,7 @@ const HomePage = () => {
                     <a href="https://github.com/JLindqvisttt/PaintMaster/tree/main/HI1038-Paint-Master-main"
                        className="text-light text-decoration-none">
                         <FaGithub className="textCV" style={{marginRight: '1vh', fontSize: '25px'}}/>
-                        Datalake Repository
+                        PaintMaster Repository
                     </a>
                 </div>
             </section>
@@ -303,18 +313,14 @@ const HomePage = () => {
                 </div>
                 <div className="col-md-5">
                     <div className="ratio ratio-21x9">
-                        <iframe
-                            src="https://www.youtube.com/embed/TwfHZ14oSSs"
-                            title="YouTube video"
-                            className="w-100 h-100"
-                        ></iframe>
+                            <SliderZyn/>
                     </div>
                 </div>
                 <div>
-                    <a href="https://github.com/JLindqvisttt/PaintMaster/tree/main/HI1038-Paint-Master-main"
+                    <a href="https://github.com/JLindqvisttt/SocialNetwork_ZYN"
                        className="text-dark text-decoration-none">
                         <FaGithub className="textCV" style={{marginRight: '1vh', fontSize: '25px'}}/>
-                        Cocktail Repository
+                        SocialNetwork_ZYN Repository
                     </a>
                 </div>
             </section>
@@ -322,34 +328,49 @@ const HomePage = () => {
                 <div className="col-md">
                     <div className="text-center">
                         <h1 className="fw-bold" style={{display: 'inline-block', borderBottom: '2px solid #1f8696'}}>
-                            Ergonomics - KTH
+                            RampII (Ergonomics) - KTH
                         </h1>
                     </div>
                     <div className="d-flex align-items-center h-100 mt-3 mx-auto">
                         <div className="mx-lg-5">
+                            <p className="text-white-50">
+                                RAMP (Risk Assessment and Management Tool for Physical Work) is a tool for assessing and
+                                managing physical workloads in the workplace. It was developed by the Swedish National
+                                Institute of Working Life and is widely used in Sweden and other countries. RAMP is
+                                designed to help employers and employees identify and reduce the risk of musculoskeletal
+                                disorders (MSDs) that can result from physically demanding work. It takes into account a
+                                range of factors, including the nature of the task, the tools and equipment used, the
+                                work environment, and the individual worker's characteristics. RAMP is a valuable
+                                resource for promoting a healthy and safe workplace, and for reducing the risk of
+                                work-related injuries and illnesses.
+                            </p>
                             <h6>
-                                Develop a client-server application for the KTH course HI1038, where players in teams of
-                                two can compete in drawing or guessing, similar to the games Guess My Drawing or
-                                Skribbl.io. The game should use Sockets for server-client communication and SDL for
-                                graphics. SDL_net should be used for the client-server communication.
+                                This project was created to simplify the process of conducting ergonomic assessments.
+                                Prior to this web application, all assessments were done manually using pen and paper,
+                                which was time-consuming and prone to errors. The solution was to develop a web
+                                application that would store all assessment data in a database, making it easily
+                                accessible and searchable. The web application was built using React for the front-end,
+                                Spring Boot for the back-end, and MySQL for the database.
+
+                                With this new system, users can quickly and easily input data, generate reports, and
+                                access previous assessments. The application also includes features such as user
+                                authentication and authorization to ensure the security of the data. Overall, this
+                                project has significantly streamlined the process of conducting ergonomic assessments
+                                and has made the job easier for those who perform them.
                             </h6>
                         </div>
                     </div>
                 </div>
                 <div className="col-md-5">
                     <div className="ratio ratio-21x9">
-                        <iframe
-                            src="https://www.youtube.com/embed/KRsKnIa1EQQ"
-                            title="YouTube video"
-                            className="w-100 h-100"
-                        ></iframe>
+                        <img src={require('../images/kth.png')} alt="Ergonomics_Kth_Image" className="w-100 h-100"/>
                     </div>
                 </div>
                 <div>
-                    <a href="https://github.com/JLindqvisttt/PaintMaster/tree/main/HI1038-Paint-Master-main"
+                    <a href="https://github.com/JLindqvisttt/RampII_KTH"
                        className="text-light text-decoration-none">
                         <FaGithub className="textCV" style={{marginRight: '1vh', fontSize: '25px'}}/>
-                        Datalake Repository
+                        RampII Repository
                     </a>
                 </div>
             </section>
