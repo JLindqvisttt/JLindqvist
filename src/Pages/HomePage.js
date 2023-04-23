@@ -8,6 +8,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import {FaGithub} from "react-icons/fa";
 import SliderZyn from "./SliderZyn";
+import Footer from "./Footer";
 
 function reveal() {
     var reveals = document.querySelectorAll(".reveal");
@@ -32,8 +33,9 @@ const HomePage = () => {
         <div>
             <Navbar collapseOnSelect expand="lg" style={{background: '#131316'}} variant="dark">
                 <Container>
-                    <Navbar.Brand href="/"> <img src={require('../images/transparant.png')} alt='logo'
-                                                 width="50vh"/></Navbar.Brand>
+                    <Navbar.Brand href="https://jonathanlindqvist.netlify.app"> <img
+                        src={require('../images/transparant.png')} alt='logo'
+                        width="50vh"/></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto" defaultActiveKey="/home" as="ul">
@@ -42,8 +44,9 @@ const HomePage = () => {
 
                         </Nav>
                         <Nav defaultActiveKey="/home" as="ul">
-                            <Nav.Link className="nav-links" href="/Cv">Cv</Nav.Link>
-                            <Nav.Link className="nav-links" href="/Contact"> Contact me </Nav.Link>
+                            <Nav.Link className="nav-links" href="https://jonathanlindqvistcv.netlify.app">Cv</Nav.Link>
+                            <Nav.Link className="nav-links"
+                                      href="https://jonathanlindqvistcontactme.netlify.app"> Contact me </Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
@@ -56,16 +59,16 @@ const HomePage = () => {
                                 <div style={{
                                     display: 'inline-block'
                                 }}>
-                                    <h1 style={{fontWeight: 'bold'}} className="display-1 animatedLine">Hello
-                                        there, {"  "}</h1>
+                                    <h4 className="display-5 animatedLine">Hello
+                                        there </h4>
                                 </div>
                                 <div style={{
                                     display: 'inline-block'
                                 }}>
-                                    <h1 className="display-1 text-white-50">{" "}  my name is </h1>
+                                    <p className="display-6 text-white-50">, my name is </p>
                                 </div>
                                 <div className="slideIn">
-                                    <h1 className="animatedLine ">Jonathan Lindqvist.</h1>
+                                    <h1 style={{fontWeight: 'bold'}} className="display-2 animatedLine ">Jonathan Lindqvist</h1>
                                 </div>
 
                                 <h4 className="reveal text-white-50">I'm a {' '}
@@ -135,8 +138,7 @@ const HomePage = () => {
 
                                 I have experience working with different types of databases including SQL, NoSQL, and
                                 graph databases, and have utilized this knowledge in my projects to create efficient and
-                                scalable applications.Please feel free to browse
-                                through my projects and contact me for any inquiries or collaborations.
+                                scalable applications. Please feel free to browse through my projects and contact me for any inquiries or collaborations.
                             </p>
                         </div>
                     </div>
@@ -176,7 +178,11 @@ const HomePage = () => {
                                 Input", which the administrator can submit to the backend in xlxs or sas7bdat formats.
                                 The administrator can also view additional information on the datasets and add, modify,
                                 or remove users from the system. Finally, the administrator can add additional
-                                authorization to users to grant them access to new datasets.</h6>
+                                authorization to users to grant them access to new datasets.
+                            </h6>
+                            <h6>
+                                This project was a collaboration with three other students, Kasper Lindström, Nonno Rydgren and Viktor Lindström Söraas.
+                            </h6>
                         </div>
                     </div>
                 </div>
@@ -219,6 +225,7 @@ const HomePage = () => {
                                 random drink by pressing on a button. Then the user can save his favorite drink by
                                 clicking on the heart icon and its store locale on the device.
                             </h6>
+                            <h6>This project was a collaboration with two other students, Carl Haneklint and Yo Han Joo.</h6>
                         </div>
                     </div>
                 </div>
@@ -229,13 +236,6 @@ const HomePage = () => {
                             title="YouTube video"
                             className="w-100 h-100"
                         ></iframe>
-                    </div>
-                    <div className="mt-5">
-                        <a href="https://github.com/JLindqvisttt/CocktailApp"
-                           className="text-dark text-decoration-none">
-                            <FaGithub className="textCV" style={{marginRight: '1vh', fontSize: '25px'}}/>
-                            Cocktail Repository
-                        </a>
                     </div>
                 </div>
             </section>
@@ -255,6 +255,7 @@ const HomePage = () => {
                                 Skribbl.io. The game should use Sockets for server-client communication and SDL for
                                 graphics. SDL_net should be used for the client-server communication.
                             </h6>
+                            <h6>This project was a collaboration with five other students, Kasper Lindström, Nonno Rydgren and Viktor Lindström Söraas, Carl Haneklint and Yo Han Joo.</h6>
                         </div>
                     </div>
                 </div>
@@ -265,13 +266,6 @@ const HomePage = () => {
                             title="YouTube video"
                             className="w-100 h-100"
                         ></iframe>
-                    </div>
-                    <div className="mt-5">
-                        <a href="https://github.com/JLindqvisttt/PaintMaster/tree/main/HI1038-Paint-Master-main"
-                           className="text-light text-decoration-none">
-                            <FaGithub className="textCV" style={{marginRight: '1vh', fontSize: '25px'}}/>
-                            PaintMaster Repository
-                        </a>
                     </div>
                 </div>
             </section>
@@ -308,6 +302,9 @@ const HomePage = () => {
 
                                 There were two different levels of access: admin and user. Admins had access to other
                                 pages, such as all user information.
+                            </h6>
+                            <h6>
+                                This project was a collaboration with another student, Emil Norstedt.
                             </h6>
                         </div>
                     </div>
@@ -360,6 +357,7 @@ const HomePage = () => {
                                 project has significantly streamlined the process of conducting ergonomic assessments
                                 and has made the job easier for those who perform them.
                             </h6>
+                            <h6>This project was given to us by KTH and was a collaboration with three other students, Emre Demirel, Johan Hultin, Mohammed Hosin.</h6>
                         </div>
                     </div>
                 </div>
@@ -375,8 +373,8 @@ const HomePage = () => {
                         </a>
                     </div>
                 </div>
-
             </section>
+            <Footer/>
         </div>
 
 

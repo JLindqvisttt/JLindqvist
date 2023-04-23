@@ -17,14 +17,14 @@ const Contact = () => {
         <div className="bg-section">
             <Navbar collapseOnSelect expand="lg" style={{background: '#131316'}} variant="dark">
                 <Container>
-                    <Navbar.Brand href="/"> <img src={require('../images/transparant.png')} alt='logo'
+                    <Navbar.Brand href="https://jonathanlindqvist.netlify.app"> <img src={require('../images/transparant.png')} alt='logo'
                                                  width="50vh"/></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto" defaultActiveKey="/home" as="ul"/>
                         <Nav defaultActiveKey="/home" as="ul">
-                            <Nav.Link className="nav-links" href="/Cv">Cv</Nav.Link>
-                            <Nav.Link className="nav-links" href="/Contact"> Contact me </Nav.Link>
+                            <Nav.Link className="nav-links" href="https://jonathanlindqvistcv.netlify.app">Cv</Nav.Link>
+                            <Nav.Link className="nav-links" href="https://jonathanlindqvistcontactme.netlify.app"> Contact me </Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
@@ -37,8 +37,8 @@ const Contact = () => {
                                 <h2 className="textCV">Contact me</h2>
                                 <ContactForm/>
                             </div>
-                            <div className="col col-md-4" style={{marginTop: '0.8vh'}}>
-                                <h4 className="textCV"> More links ;) </h4>
+                            <div className="col col-md-4" style={{marginTop: '1.8vh'}}>
+                                <h4 className="textCV"> More links </h4>
                                 <div style={{marginTop: '4vh'}}>
                                     <a className="text-light text-decoration-none">
                                         <FaEnvelope className="textCV"

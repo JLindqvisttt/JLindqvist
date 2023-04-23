@@ -9,20 +9,21 @@ import Nav from "react-bootstrap/Nav";
 import Test from "./Test";
 import {Col, Row} from "react-bootstrap";
 import ProgressBar from 'react-bootstrap/ProgressBar'
+import Footer from "./Footer";
 
 const CvPage = () => {
     return (
         <div className="bg-section">
             <Navbar collapseOnSelect expand="lg" style={{background: '#131316'}} variant="dark">
                 <Container>
-                    <Navbar.Brand href="/">
+                    <Navbar.Brand href="https://jonathanlindqvist.netlify.app">
                         <img src={require('../images/transparant.png')} alt='logo' width="50vh"/></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto" defaultActiveKey="/home" as="ul"/>
                         <Nav defaultActiveKey="home" as="ul">
-                            <Nav.Link className="nav-links" href="/Cv">Cv</Nav.Link>
-                            <Nav.Link className="nav-links" href="/Contact"> Contact me </Nav.Link>
+                            <Nav.Link className="nav-links" href="https://jonathanlindqvistcv.netlify.app">Cv</Nav.Link>
+                            <Nav.Link className="nav-links" href="https://jonathanlindqvistcontactme.netlify.app"> Contact me </Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
@@ -281,15 +282,15 @@ const CvPage = () => {
                             <h3 className='textCV'>References</h3>
                             <Col md={10}>
                                     <p>
-                                    References are provide on request
+                                    References are provided on request
                                     </p>
                                 </Col>
                         
                             </Row>
                         </div>
                 </div>
-
             </section>
+            <Footer/>
         </div>
     );
 };
