@@ -57,12 +57,12 @@ const HomePage = () => {
                                     display: 'inline-block'
                                 }}>
                                     <h1 style={{fontWeight: 'bold'}} className="display-1 animatedLine">Hello
-                                        there, {" "}</h1>
+                                        there, {"  "}</h1>
                                 </div>
                                 <div style={{
                                     display: 'inline-block'
                                 }}>
-                                    <h1 className="display-1 text-white-50"> my name is </h1>
+                                    <h1 className="display-1 text-white-50">{" "}  my name is </h1>
                                 </div>
                                 <div className="slideIn">
                                     <h1 className="animatedLine ">Jonathan Lindqvist.</h1>
