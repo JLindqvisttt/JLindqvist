@@ -31,23 +31,33 @@ const CvPage = () => {
                 <div className="container">
                         <div className="CVpage">
                             <h2 className="text-center textCV">Curriculum Vitae</h2>
-                            <div className="row justify-content-md-center mt-lg-5">
-                                <div className="col-2">
-                                    <img src={require('../images/CV_IMAGE.PNG')} alt='logo' width={150}/>
-                                </div>
-                                <div className="col-8 mt-5">
-                                    <p>"Goal-oriented and driven software engineer with a passion for
-                                        achieving results. Dedicated to exceeding expectations and constantly
-                                        striving to improve myself and my work "</p>
-                                </div>
-
-                                <div className="col-md-2">
-                                    <h6 className="text-lg-start textCV">Jonathan Lindqvist</h6>
-                                    <h6 className="text-lg-start">1999-02-05</h6>
-                                    <h6 className="text-lg-start">Musserongången 285</h6>
-                                    <h6 className="text-lg-start">Email: linkanjontes@gmail.com</h6>
+                            <div className="container">
+                                <div className="row justify-content-md-center mt-lg-5">
+                                    <div className="col-md-2 d-flex justify-content-center mb-3 mb-md-0">
+                                        <img src={require('../images/CV_IMAGE.PNG')} alt='logo' width={150} className="mx-auto d-block" />
+                                    </div>
+                                    <div className="col-md-8 align-self-center">
+                                        <p className="text-center text-md-start">"Goal-oriented and driven software engineer with a passion for achieving results. Dedicated to exceeding expectations and constantly striving to improve myself and my work "</p>
+                                    </div>
+                                    <div className="col-md-2">
+                                        <div className="row mb-3">
+                                            <div className="col-12">
+                                                <h6 className="text-lg-start textCV">Jonathan Lindqvist</h6>
+                                            </div>
+                                            <div className="col-12">
+                                                <h6 className="text-lg-start">1999-02-05</h6>
+                                            </div>
+                                            <div className="col-12">
+                                                <h6 className="text-lg-start">Musserongången 285</h6>
+                                            </div>
+                                            <div className="col-12">
+                                                <h6 className="text-lg-start">Email: linkanjontes@gmail.com</h6>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+
                             <Row className="mb-4 mt-4" style={{borderTop: "2px solid #379b9f", paddingTop:'10px '}}>
                                 <Col md={10}>
                                     <h3 className='textCV'>Education</h3>

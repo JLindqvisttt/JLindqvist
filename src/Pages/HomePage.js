@@ -38,7 +38,7 @@ const HomePage = () => {
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto" defaultActiveKey="/home" as="ul">
                             <Nav.Link className="nav-links" href="#aboutme">About me</Nav.Link>
-                            <Nav.Link className="nav-links" href="#aboutme">Projects</Nav.Link>
+                            <Nav.Link className="nav-links" href="#projects">Projects</Nav.Link>
 
                         </Nav>
                         <Nav defaultActiveKey="/home" as="ul">
@@ -74,7 +74,7 @@ const HomePage = () => {
                                         loop={Infinity}
                                         wrapper="b"
                                         steps={[
-                                            '23 years old ',
+                                            '24 years old ',
                                             'Developer ',
                                             5000,
                                             'Student ',
@@ -86,7 +86,7 @@ const HomePage = () => {
                                 </h4>
                             </div>
                             <div className="col-sm-1" style={{textAlign: "center"}}>
-                                <img src={require('../images/programmer-icon.webp')} alt='logo' width="180vh"/>
+                                <img src={require('../images/transparant.png')} alt='logo' width="180vh"/>
                             </div>
                         </div>
                     </div>
@@ -110,18 +110,16 @@ const HomePage = () => {
                                 gained extensive experience working with the three major software architectures:
                                 frontend, backend, and database.
 
-                                In addition to my technical skills, I am a strong communicator and collaborator, able to
-                                work effectively both independently and as part of a team. I am committed to delivering
-                                high-quality software that meets the needs of end-users and helps businesses achieve
-                                their goals. I am excited to continue growing my skills and contributing to the dynamic
-                                and constantly evolving field of software development."
+                                I am committed to delivering high-quality software that meets the needs of end-users and
+                                helps businesses achieve their goals. I am excited to continue growing my skills and
+                                contributing to the dynamic and constantly evolving field of software development.
                             </p>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section className="row m-0 p-5 ">
+            <section className="row m-0 p-5 " id={"projects"}>
                 <div className="col-lg-6 mx-auto">
                     <div className="text-center">
                         <h1 className="fw-bold" style={{display: 'inline-block', borderBottom: '2px solid #1f8696'}}>
@@ -182,29 +180,30 @@ const HomePage = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-md-5">
-                    <div className="ratio ratio-21x9">
+                <div className="col-md-5 ">
+                    <div className="ratio ratio-21x9 mt-5">
                         <iframe
                             src="https://www.youtube.com/embed/aPTkQ63OmEY"
                             title="YouTube video"
                             className="w-100 h-100"
                         ></iframe>
                     </div>
+                    <div className="mt-5">
+                        <a href="https://github.com/JLindqvisttt/DataLake_Backend"
+                           className="text-light text-decoration-none">
+                            <FaGithub className="textCV" style={{marginRight: '1vh', fontSize: '25px'}}/>
+                            Datalake Repository - Backend
+                        </a>
+                    </div>
+                    <div className="mt-2">
+                        <a href="https://github.com/JLindqvisttt/DataLake_Frontend"
+                           className="text-light text-decoration-none">
+                            <FaGithub className="textCV" style={{marginRight: '1vh', fontSize: '25px'}}/>
+                            Datalake Repository - Frontend
+                        </a>
+                    </div>
                 </div>
-                <div className="ms-5 mt-3">
-                    <a href="https://github.com/JLindqvisttt/DataLake_Backend"
-                       className="text-light text-decoration-none">
-                        <FaGithub className="textCV" style={{marginRight: '1vh', fontSize: '25px'}}/>
-                        Datalake Repository - Backend
-                    </a>
-                </div>
-                <div className="ms-5 mt-3">
-                    <a href="https://github.com/JLindqvisttt/DataLake_Frontend"
-                       className="text-light text-decoration-none">
-                        <FaGithub className="textCV" style={{marginRight: '1vh', fontSize: '25px'}}/>
-                        Datalake Repository - Frontend
-                    </a>
-                </div>
+
             </section>
             <section className="row m-0 p-5">
                 <div className="col-md">
@@ -224,22 +223,23 @@ const HomePage = () => {
                     </div>
                 </div>
                 <div className="col-md-5">
-                    <div className="ratio ratio-21x9">
+                    <div className="ratio ratio-21x9 mt-5">
                         <iframe
                             src="https://www.youtube.com/embed/TwfHZ14oSSs"
                             title="YouTube video"
                             className="w-100 h-100"
                         ></iframe>
                     </div>
-                </div>
-                <div>
-                    <a href="https://github.com/JLindqvisttt/CocktailApp"
-                       className="text-dark text-decoration-none">
-                        <FaGithub className="textCV" style={{marginRight: '1vh', fontSize: '25px'}}/>
-                        Cocktail Repository
-                    </a>
+                    <div className="mt-5">
+                        <a href="https://github.com/JLindqvisttt/CocktailApp"
+                           className="text-dark text-decoration-none">
+                            <FaGithub className="textCV" style={{marginRight: '1vh', fontSize: '25px'}}/>
+                            Cocktail Repository
+                        </a>
+                    </div>
                 </div>
             </section>
+
             <section className="row m-0 p-5 bg-section text-white">
                 <div className="col-md">
                     <div className="text-center">
@@ -259,22 +259,23 @@ const HomePage = () => {
                     </div>
                 </div>
                 <div className="col-md-5">
-                    <div className="ratio ratio-21x9">
+                    <div className="ratio ratio-21x9 mt-5">
                         <iframe
                             src="https://www.youtube.com/embed/KRsKnIa1EQQ"
                             title="YouTube video"
                             className="w-100 h-100"
                         ></iframe>
                     </div>
-                </div>
-                <div>
-                    <a href="https://github.com/JLindqvisttt/PaintMaster/tree/main/HI1038-Paint-Master-main"
-                       className="text-light text-decoration-none">
-                        <FaGithub className="textCV" style={{marginRight: '1vh', fontSize: '25px'}}/>
-                        PaintMaster Repository
-                    </a>
+                    <div className="mt-5">
+                        <a href="https://github.com/JLindqvisttt/PaintMaster/tree/main/HI1038-Paint-Master-main"
+                           className="text-light text-decoration-none">
+                            <FaGithub className="textCV" style={{marginRight: '1vh', fontSize: '25px'}}/>
+                            PaintMaster Repository
+                        </a>
+                    </div>
                 </div>
             </section>
+
             <section className="row m-0 p-5">
                 <div className="col-md">
                     <div className="text-center">
@@ -312,18 +313,19 @@ const HomePage = () => {
                     </div>
                 </div>
                 <div className="col-md-5">
-                    <div className="ratio ratio-21x9">
-                            <SliderZyn/>
+                    <div className="ratio ratio-21x9 mt-5">
+                        <SliderZyn/>
+                    </div>
+                    <div className="mt-5">
+                        <a href="https://github.com/JLindqvisttt/SocialNetwork_ZYN"
+                           className="text-dark text-decoration-none">
+                            <FaGithub className="textCV" style={{marginRight: '1vh', fontSize: '25px'}}/>
+                            SocialNetwork_ZYN Repository
+                        </a>
                     </div>
                 </div>
-                <div>
-                    <a href="https://github.com/JLindqvisttt/SocialNetwork_ZYN"
-                       className="text-dark text-decoration-none">
-                        <FaGithub className="textCV" style={{marginRight: '1vh', fontSize: '25px'}}/>
-                        SocialNetwork_ZYN Repository
-                    </a>
-                </div>
             </section>
+
             <section className="row m-0 p-5 bg-section text-white">
                 <div className="col-md">
                     <div className="text-center">
@@ -362,17 +364,18 @@ const HomePage = () => {
                     </div>
                 </div>
                 <div className="col-md-5">
-                    <div className="ratio ratio-21x9">
+                    <div className="ratio ratio-21x9 mt-5">
                         <img src={require('../images/kth.png')} alt="Ergonomics_Kth_Image" className="w-100 h-100"/>
                     </div>
+                    <div className="mt-5">
+                        <a href="https://github.com/JLindqvisttt/RampII_KTH"
+                           className="text-light text-decoration-none">
+                            <FaGithub className="textCV" style={{marginRight: '1vh', fontSize: '25px'}}/>
+                            RampII Repository
+                        </a>
+                    </div>
                 </div>
-                <div>
-                    <a href="https://github.com/JLindqvisttt/RampII_KTH"
-                       className="text-light text-decoration-none">
-                        <FaGithub className="textCV" style={{marginRight: '1vh', fontSize: '25px'}}/>
-                        RampII Repository
-                    </a>
-                </div>
+
             </section>
         </div>
 

@@ -14,14 +14,12 @@ import {FaEnvelope, FaGithub, FaLinkedin} from "react-icons/fa";
 
 const Contact = () => {
     return (
-        <div>
+        <div className="bg-section">
             <Navbar collapseOnSelect expand="lg" style={{background: '#131316'}} variant="dark">
                 <Container>
                     <Navbar.Brand href="/"> <img src={require('../images/transparant.png')} alt='logo'
                                                  width="50vh"/></Navbar.Brand>
-                    <Navbar.Toggle aria-controls="responsive-navbar-nav">
-                        <Nav.Link className="nav-links" href="#aboutme">dede</Nav.Link>
-                    </Navbar.Toggle>
+                    <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto" defaultActiveKey="/home" as="ul"/>
                         <Nav defaultActiveKey="/home" as="ul">
@@ -31,49 +29,50 @@ const Contact = () => {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-            <section>
-                <div className="bg-imageContact">
-                    <div className="container">
+            <section className="bg-imageContact">
+                <div className="container">
+                    <div className="Contactpage" style={{marginBottom: '40vh'}}>
                         <div className="row justify-content-md-center">
-                            <section style={{height: '100vh'}}>
-                                <div className="box bg-section text-light">
-                                    <div className="row justify-content-md-center">
-                                        <div className="col-6">
-                                            <h2>Contact me</h2>
-                                            <ContactForm/>
-                                        </div>
-                                        <div className="col-6 col-md-4" style={{marginTop:'0.8vh'}}>
-                                        <h4>  More links ;) </h4>
-                                            <div style={{marginTop:'4vh'}}>
-                                                <a href="mailto:example@email.com" className="text-light text-decoration-none">
-                                                    <FaEnvelope className="textCV" style={{marginRight:'1vh', fontSize:'25px'}}/>
-                                                    linkanjontes@gmail.com
-                                                </a>
-                                            </div>
-                                            <div style={{marginTop:'4vh'}}>
-                                                <a href="https://github.com/" className="text-light text-decoration-none">
-                                                    <FaGithub className="textCV" style={{marginRight:'1vh', fontSize:'25px'}}/>
-                                                    GitHub
-                                                </a>
-                                            </div>
-                                            <div style={{marginTop:'4vh'}}>
-                                                <a href="https://github.com/" className="text-light text-decoration-none">
-                                                    <FaLinkedin className="textCV" style={{marginRight:'1vh', fontSize:'25px'}}/>
-                                                    LinkedIn
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-
+                            <div className="col-lg-6 col-md-8 mb-5">
+                                <h2 className="textCV">Contact me</h2>
+                                <ContactForm/>
+                            </div>
+                            <div className="col col-md-4" style={{marginTop: '0.8vh'}}>
+                                <h4 className="textCV"> More links ;) </h4>
+                                <div style={{marginTop: '4vh'}}>
+                                    <a className="text-light text-decoration-none">
+                                        <FaEnvelope className="textCV"
+                                                    style={{marginRight: '1vh', fontSize: '25px'}}/>
+                                        linkanjontes@gmail.com
+                                    </a>
                                 </div>
-                            </section>
+                                <div style={{marginTop: '4vh'}}>
+                                    <a href="https://github.com/JLindqvisttt?tab=repositories"
+                                       className="text-light text-decoration-none">
+                                        <FaGithub className="textCV"
+                                                  style={{marginRight: '1vh', fontSize: '25px'}}/>
+                                        GitHub
+                                    </a>
+                                </div>
+                                <div style={{marginTop: '4vh'}}>
+                                    <a href="https://www.linkedin.com/in/jonathan-lindqvist-1630b2162/"
+                                       className="text-light text-decoration-none">
+                                        <FaLinkedin className="textCV"
+                                                    style={{marginRight: '1vh', fontSize: '25px'}}/>
+                                        LinkedIn
+                                    </a>
+                                </div>
+                            </div>
                         </div>
+
                     </div>
-                    <br/>
+
                 </div>
+                <br/>
             </section>
             <Footer/>
         </div>
+
     );
 };
 

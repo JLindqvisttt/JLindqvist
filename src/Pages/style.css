@@ -74,8 +74,20 @@ section{
 .CVpage:hover {
     box-shadow: 0 0 11px rgba(33,33,33,.2);
 }
+.Contactpage{
+    opacity: 0.95;
+    background: #131316;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    padding: 5vh;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    transition: box-shadow .3s;
+}
+.Contactpage:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
 .box {
-    margin-top: -25vh;
     opacity: 0.95;
     padding: 5vh;
     transition: box-shadow .3s;

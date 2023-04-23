@@ -54,9 +54,10 @@ const ContactForm = () => {
                 <Form.Group controlId="formMessage" className="mb-4">
                     <Form.Control as="textarea" rows="3" placeholder="Enter your message" required name="message"/>
                 </Form.Group>
-                <Button variant="primary" type="submit">
+                <Button  variant="primary" type="submit" className="font-weight-bold">
                     Send message
                 </Button>
+
 
             </Col>
         </form>
