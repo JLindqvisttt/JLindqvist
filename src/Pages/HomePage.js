@@ -155,13 +155,13 @@ const HomePage = () => {
                         <div className="mx-lg-5">
                             <p className="text-white-50">
                                 In health research, data from multiple sources must be retrieved and processed, which is
-                                time-consuming. The "Röda korset" is seeking to automate the process of compiling data
+                                time-consuming. The Red Cross is seeking to automate the process of compiling data
                                 from different sources to increase efficiency. The challenge is to find coherent data in
                                 inconsistent data and gather it from scattered sources. The goal is to create a software
                                 solution that can integrate data from different sources into a single dataset, allowing
-                                for more efficient data analysis. A prototype has been developed that allows the
-                                software administrator to input data and provides access to the compiled information in
-                                the database for employees. The tests demonstrate that data can be retrieved from the
+                                for more efficient data analysis. A prototype has been developed as a trial
+                                software administrator to enter data and provide access to the compiled information i
+                                the employee database. We got this project through KTH, which had a contact with the Red Cross. The tests demonstrate that data can be retrieved from the
                                 database in the desired manner and input data can be compiled into the same format in
                                 the database.
                             </p>
@@ -252,8 +252,8 @@ const HomePage = () => {
                             <h6>
                                 Develop a client-server application for the KTH course HI1038, where players in teams of
                                 two can compete in drawing or guessing, similar to the games Guess My Drawing or
-                                Skribbl.io. The game should use Sockets for server-client communication and SDL for
-                                graphics. SDL_net should be used for the client-server communication.
+                                Skribbl.io. The game uses Sockets for server-client communication and SDL for
+                                graphics. SDL_net are being used for the client-server communication.
                             </h6>
                             <h6>This project was a collaboration with five other students, Kasper Lindström, Nonno Rydgren and Viktor Lindström Söraas, Carl Haneklint and Yo Han Joo.</h6>
                         </div>

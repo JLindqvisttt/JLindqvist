@@ -1,14 +1,11 @@
 import React from 'react';
 import "./style.css"
-import {MDBIcon} from 'mdbreact';
 import "@fortawesome/fontawesome-free/css/all.min.css"
-import Typical from 'react-typical'
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import ContactForm from "./ContactForm";
 import Footer from "./Footer";
-import {Col} from "react-bootstrap";
 import {FaEnvelope, FaGithub, FaLinkedin} from "react-icons/fa";
 
 
@@ -17,14 +14,22 @@ const Contact = () => {
         <div className="bg-section">
             <Navbar collapseOnSelect expand="lg" style={{background: '#131316'}} variant="dark">
                 <Container>
-                    <Navbar.Brand href="https://jonathanlindqvist.netlify.app"> <img src={require('../images/transparant.png')} alt='logo'
-                                                 width="50vh"/></Navbar.Brand>
+                    <Navbar.Brand href="https://jonathanlindqvist.netlify.app">
+                        <img
+                            src={require('../images/transparant.png')} alt='logo'
+                            width="50vh"/>
+                    </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                     <Navbar.Collapse id="responsive-navbar-nav">
-                        <Nav className="me-auto" defaultActiveKey="/home" as="ul"/>
+                        <Nav className="me-auto" defaultActiveKey="/home" as="ul">
+                            <Nav.Link className="nav-links" href="https://jonathanlindqvist.netlify.app/#aboutme">About me</Nav.Link>
+                            <Nav.Link className="nav-links" href="https://jonathanlindqvist.netlify.app/#projects">Projects</Nav.Link>
+
+                        </Nav>
                         <Nav defaultActiveKey="/home" as="ul">
                             <Nav.Link className="nav-links" href="https://jonathanlindqvistcv.netlify.app">Cv</Nav.Link>
-                            <Nav.Link className="nav-links" href="https://jonathanlindqvistcontactme.netlify.app"> Contact me </Nav.Link>
+                            <Nav.Link className="nav-links"
+                                      href="https://jonathanlindqvistcontactme.netlify.app"> Contact me </Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
