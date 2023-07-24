@@ -22,8 +22,10 @@ const CvPage = () => {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto" defaultActiveKey="/home" as="ul">
-                            <Nav.Link className="nav-links" href="https://jonathanlindqvist.netlify.app/#aboutme">About me</Nav.Link>
-                            <Nav.Link className="nav-links" href="https://jonathanlindqvist.netlify.app/#projects">Projects</Nav.Link>
+                            <Nav.Link className="nav-links" href="https://jonathanlindqvist.netlify.app/#aboutme">About
+                                me</Nav.Link>
+                            <Nav.Link className="nav-links"
+                                      href="https://jonathanlindqvist.netlify.app/#projects">Projects</Nav.Link>
 
                         </Nav>
                         <Nav defaultActiveKey="/home" as="ul">
@@ -45,7 +47,8 @@ const CvPage = () => {
                                          className="mx-auto d-block"/>
                                 </div>
                                 <div className="col-md-8 align-self-center">
-                                    <p className="text-center text-md-start">"Goal-oriented and driven software engineer
+                                    <p className="text-center text-md-start textCV">"Goal-oriented and driven software
+                                        engineer
                                         with a passion for achieving results. Dedicated to exceeding expectations and
                                         constantly striving to improve myself and my work "</p>
                                 </div>
@@ -93,7 +96,7 @@ const CvPage = () => {
                                 </p>
                             </Col>
                             <Col md={2} style={{marginTop: "4vh"}}>
-                                <p>Aug 2020 - Ongoing</p>
+                                <p>Aug 2020 - June 2023</p>
                             </Col>
                         </Row>
                         <Row className="mb-4">
