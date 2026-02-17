@@ -1,3 +1,6 @@
+/**
+ * SliderZyn – Image carousel showcasing the Social Network ZYN project.
+ */
 import Carousel from 'react-bootstrap/Carousel';
 
 function SliderZyn() {

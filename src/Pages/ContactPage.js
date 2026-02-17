@@ -1,84 +1,149 @@
-import React from 'react';
-import "./style.css"
-import "@fortawesome/fontawesome-free/css/all.min.css"
-import Navbar from "react-bootstrap/Navbar";
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import ContactForm from "./ContactForm";
-import Footer from "./Footer";
-import {FaEnvelope, FaGithub, FaLinkedin} from "react-icons/fa";
+/**
+ * ContactPage – Contact form with EmailJS integration and social links.
+ */
+import React, { useRef, useState } from 'react';
+import { motion } from 'framer-motion';
+import { Col, Form, Button } from 'react-bootstrap';
+import { FaEnvelope, FaGithub, FaLinkedin, FaPaperPlane, FaCheckCircle } from 'react-icons/fa';
+import emailjs from '@emailjs/browser';
+import NavbarComponent from '../components/NavbarComponent';
+import Footer from '../components/Footer';
 
+const fadeUp = {
+    hidden: { opacity: 0, y: 30 },
+    visible: (i = 0) => ({
+        opacity: 1, y: 0,
+        transition: { duration: 0.5, delay: i * 0.1, ease: 'easeOut' }
+    })
+};
 
-const Contact = () => {
+const ContactPage = () => {
+    const [submitted, setSubmitted] = useState(false);
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+        emailjs.sendForm(
+            'service_wgm9kzf',
+            'template_xutb547',
+            form.current,
+            'AVhlORWF5ZCOqb8u6'
+        ).then(() => {
+            setTimeout(() => setSubmitted(true), 100);
+        }, (error) => {
+            console.log(error.text);
+        });
+    };
+
     return (
         <div className="bg-section">
-            <Navbar collapseOnSelect expand="lg" style={{background: '#131316'}} variant="dark">
-                <Container>
-                    <Navbar.Brand href="https://jonathanlindqvist.netlify.app">
-                        <img
-                            src={require('../images/transparant.png')} alt='logo'
-                            width="50vh"/>
-                    </Navbar.Brand>
-                    <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
-                    <Navbar.Collapse id="responsive-navbar-nav">
-                        <Nav className="me-auto" defaultActiveKey="/home" as="ul">
-                            <Nav.Link className="nav-links" href="https://jonathanlindqvist.netlify.app/#aboutme">About me</Nav.Link>
-                            <Nav.Link className="nav-links" href="https://jonathanlindqvist.netlify.app/#projects">Projects</Nav.Link>
+            <NavbarComponent />
 
-                        </Nav>
-                        <Nav defaultActiveKey="/home" as="ul">
-                            <Nav.Link className="nav-links" href="https://jonathanlindqvistcv.netlify.app">Cv</Nav.Link>
-                            <Nav.Link className="nav-links"
-                                      href="https://jonathanlindqvistcontactme.netlify.app"> Contact me </Nav.Link>
-                        </Nav>
-                    </Navbar.Collapse>
-                </Container>
-            </Navbar>
-            <section className="bg-imageContact">
-                <div className="container">
-                    <div className="Contactpage" style={{marginBottom: '40vh'}}>
-                        <div className="row justify-content-md-center">
-                            <div className="col-lg-6 col-md-8 mb-5">
-                                <h2 className="textCV">Contact me</h2>
-                                <ContactForm/>
-                            </div>
-                            <div className="col col-md-4" style={{marginTop: '1.8vh'}}>
-                                <h4 className="textCV"> More links </h4>
-                                <div style={{marginTop: '4vh'}}>
-                                    <a className="text-light text-decoration-none">
-                                        <FaEnvelope className="textCV"
-                                                    style={{marginRight: '1vh', fontSize: '25px'}}/>
-                                        linkanjontes@gmail.com
-                                    </a>
-                                </div>
-                                <div style={{marginTop: '4vh'}}>
-                                    <a href="https://github.com/JLindqvisttt?tab=repositories"
-                                       className="text-light text-decoration-none">
-                                        <FaGithub className="textCV"
-                                                  style={{marginRight: '1vh', fontSize: '25px'}}/>
-                                        GitHub
-                                    </a>
-                                </div>
-                                <div style={{marginTop: '4vh'}}>
-                                    <a href="https://www.linkedin.com/in/jonathan-lindqvist-1630b2162/"
-                                       className="text-light text-decoration-none">
-                                        <FaLinkedin className="textCV"
-                                                    style={{marginRight: '1vh', fontSize: '25px'}}/>
-                                        LinkedIn
-                                    </a>
-                                </div>
-                            </div>
+            <div style={{ paddingTop: '70px', minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
+                <motion.div
+                    className="contact-container"
+                    initial="hidden"
+                    animate="visible"
+                    variants={fadeUp}
+                    style={{ flex: 1 }}
+                >
+                    <div className="row">
+                        <div className="col-lg-7 mb-4 mb-lg-0">
+                            <h2 style={{ color: 'var(--accent)', fontWeight: 700, marginBottom: '0.5rem' }}>
+                                Get in Touch
+                            </h2>
+                            <p style={{ color: 'var(--text-muted)', marginBottom: '2rem' }}>
+                                Have a question or want to work together? Drop me a message!
+                            </p>
+
+                            {submitted ? (
+                                <motion.div
+                                    className="text-center py-5"
+                                    initial={{ opacity: 0, scale: 0.8 }}
+                                    animate={{ opacity: 1, scale: 1 }}
+                                    transition={{ duration: 0.4 }}
+                                >
+                                    <FaCheckCircle style={{ fontSize: '3rem', color: 'var(--accent-light)', marginBottom: '1rem' }} />
+                                    <h4 style={{ color: 'var(--text-primary)' }}>Thank you!</h4>
+                                    <p style={{ color: 'var(--text-muted)' }}>I'll get back to you soon.</p>
+                                </motion.div>
+                            ) : (
+                                <form ref={form} onSubmit={sendEmail}>
+                                    <Col>
+                                        <Form.Group className="mb-3">
+                                            <Form.Control
+                                                type="text"
+                                                placeholder="Full name"
+                                                required
+                                                name="user_name"
+                                                className="contact-input"
+                                            />
+                                        </Form.Group>
+                                        <Form.Group className="mb-3">
+                                            <Form.Control
+                                                type="email"
+                                                placeholder="Email address"
+                                                required
+                                                name="user_email"
+                                                className="contact-input"
+                                            />
+                                        </Form.Group>
+                                        <Form.Group className="mb-4">
+                                            <Form.Control
+                                                as="textarea"
+                                                rows={5}
+                                                placeholder="Your message..."
+                                                required
+                                                name="message"
+                                                className="contact-input"
+                                            />
+                                        </Form.Group>
+                                        <Button type="submit" className="contact-btn">
+                                            <FaPaperPlane style={{ marginRight: '0.5rem' }} />
+                                            Send Message
+                                        </Button>
+                                    </Col>
+                                </form>
+                            )}
                         </div>
 
+                        <div className="col-lg-5">
+                            <h5 style={{ color: 'var(--accent)', fontWeight: 600, marginBottom: '1.5rem' }}>
+                                Connect with me
+                            </h5>
+
+                            <a href="mailto:linkanjontes@gmail.com" className="contact-social-link">
+                                <FaEnvelope className="contact-social-icon" />
+                                <span>linkanjontes@gmail.com</span>
+                            </a>
+
+                            <a
+                                href="https://github.com/JLindqvisttt"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="contact-social-link"
+                            >
+                                <FaGithub className="contact-social-icon" />
+                                <span>GitHub</span>
+                            </a>
+
+                            <a
+                                href="https://www.linkedin.com/in/jonathan-lindqvist-1630b2162/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="contact-social-link"
+                            >
+                                <FaLinkedin className="contact-social-icon" />
+                                <span>LinkedIn</span>
+                            </a>
+                        </div>
                     </div>
+                </motion.div>
+            </div>
 
-                </div>
-                <br/>
-            </section>
-            <Footer/>
+            <Footer />
         </div>
-
     );
 };
 
-export default Contact;
+export default ContactPage;
